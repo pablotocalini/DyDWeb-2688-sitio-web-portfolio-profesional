@@ -1,0 +1,163 @@
+/* Asegura que el cuerpo y el contenedor principal ocupen el 100% de la altura de la ventana */
+html {
+  font-size: 16px;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #fefaee;
+}
+
+/** GENERAL BODY */
+/* Contenedor principal configurado como flexbox */
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+/** general main */
+/* El main se expande para ocupar el espacio disponible */
+main {
+  flex: 1;
+  margin: 1rem;
+}
+
+/* General Navbar */
+nav ul {
+  margin-top: 0;
+  background-color: #4a7c59;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+  list-style: none;
+}
+
+nav ul li {
+  color: #c8d5b9;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #c8d5b9;
+}
+
+li a:hover {
+  color: black;
+}
+
+/** INDEX PAGE */
+/* Section of image, presentation and experience */
+.image-section-container {
+  display: flex;
+  gap: 1rem;
+  align-items: stretch; /* Hace que ambos elementos (imagen y contenedor) se estiren al mismo alto */
+  margin: 0 auto;
+}
+
+.image-section-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Separa los <section> para que ocupen todo el alto disponible */
+}
+
+
+.responsive-image {
+  object-fit: cover;
+  max-width: 100%; /* La imagen nunca será más ancha que su contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 0.5rem; /* Si quieres darle bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+#presentation,
+#featured-experience,
+#professional-summary {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  align-self: stretch;
+  background-color: #fff;
+  flex: 1; /* Permite que los <section> se expandan para ocupar el mismo alto */
+  margin: 0.5rem;
+  /* Shadows/Card */
+  box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04);
+}
+
+/** GENERAL FOOTER */
+footer {
+  background-color: #4a7c59;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-word {
+  margin: 0;
+}
+
+.custom-line {
+  width: 50%; /* Ancho de la línea */
+  height: 0.1875rem; /* Espesor de la línea */
+  background-color: #c8d5b9;
+  border: none;
+  margin: 0.625rem 0;
+}
+
+.bottom-words {
+  font-size: 1rem;
+  margin: 0;
+}
+
+footer p {
+  color: #c8d5b9;
+}
+
+/** MOBILE */
+@media (max-width: 768px) {
+  nav ul {
+    display: block;
+  }
+
+  /** INDEX PAGE */
+  .image-section-container {
+    flex-direction: column; /* Imagen y texto uno debajo del otro en pantallas pequeñas */
+    gap: 0.75rem;
+    align-items: center;
+  }
+
+  .image-section-container > div {
+    width: 100%; /* Asegura que el contenedor de los <section> ocupe el 100% del ancho en pantallas pequeñas */
+  }
+  .responsive-image {
+    max-width: 100%; /* O un valor menor para reducirla en pantallas pequeñas */
+  }
+
+  .custom-line {
+    width: 80%; /* Ancho de la línea en dispositivos pequeños */
+  }
+
+  #presentation {
+    padding: 0.75rem; /* Reducir el padding en pantallas pequeñas */
+  }
+
+  footer p {
+    font-size: 0.875rem; /* Ajusta el tamaño de texto en móviles */
+  }
+}
+
+@media (max-width: 400px) {
+  nav ul {
+    font-size: 0.875rem; /* Reduce tamaño de los enlaces en pantallas muy pequeñas */
+  }
+}
