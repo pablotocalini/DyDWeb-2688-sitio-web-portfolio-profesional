@@ -48,8 +48,9 @@ nav li a {
 li a:hover {
   color: black;
 }
+/* * END GENERAL BODY */
 
-/** INDEX PAGE */
+/** INDEX PAGE START */
 /* Section of image, presentation and experience */
 .image-section-container {
   display: flex;
@@ -63,7 +64,6 @@ li a:hover {
   flex-direction: column;
   justify-content: space-between; /* Separa los <section> para que ocupen todo el alto disponible */
 }
-
 
 .responsive-image {
   object-fit: cover;
@@ -88,8 +88,130 @@ li a:hover {
   /* Shadows/Card */
   box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04);
 }
+/** END INDEX PAGE */
 
-/** GENERAL FOOTER */
+/** ABOUT ME PAGE START  */
+#short-biography,
+#professional-goals {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  align-self: stretch;
+  background-color: #fff;
+  flex: 1; /* Permite que los <section> se expandan para ocupar el mismo alto */
+  margin: 2rem, 0;
+  /* Shadows/Card */
+  box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04);
+}
+
+#academic-training-and-experience {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Espacio entre los dos divs */
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04);
+  margin: 2rem 0;
+}
+
+.academic-container {
+  padding: 1rem;
+  background-color: #f9f9f9; /* Opcional: Cambiar el fondo de los contenedores individuales */
+  border-radius: 8px; /* Redondea los bordes de los contenedores */
+}
+/** END ABOUT ME PAGE */
+
+/* * PORTFOLIO PAGE START */
+#featured-projects {
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04);
+  margin: 2rem 0;
+}
+
+#featured-projects h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+/* Contenedor de las tarjetas de proyecto */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a la siguiente línea si es necesario */
+  gap: 1rem; /* Espacio entre las tarjetas */
+  justify-content: center; /* Centra las tarjetas en el contenedor */
+}
+
+/* Estilos para cada tarjeta de proyecto */
+.project-card {
+  flex: 1 1 calc(50% - 1rem); /* Ocupa la mitad del ancho menos el espacio del gap */
+  box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho */
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04);
+  padding: 1rem;
+  margin: 0;
+}
+
+.project-card h3 {
+  text-align: center; /* Centra el texto del encabezado */
+}
+
+/* * END PORTFOLIO PAGE */
+
+/* * RESUME PAGE START */
+/* * END RESUME PAGE */
+
+/* * SERVICES PAGE START */
+#services {
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04);
+  margin: 2rem 0;
+}
+
+#services h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+/* Contenedor de las tarjetas de proyecto */
+.services-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a la siguiente línea si es necesario */
+  gap: 1rem; /* Espacio entre las tarjetas */
+  justify-content: center; /* Centra las tarjetas en el contenedor */
+}
+
+/* Estilos para cada tarjeta de proyecto */
+.service-card {
+  flex: 1 1 calc(50% - 1rem); /* Ocupa la mitad del ancho menos el espacio del gap */
+  box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho */
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04);
+  padding: 1rem;
+  margin: 0;
+}
+
+.service-card h3 {
+  text-align: center; /* Centra el texto del encabezado */
+}
+/* * END SERVICES PAGE */
+
+/* * TESTIMONIALS PAGE START */
+/* * END TESTIMONIALSPAGE */
+
+/* * CONTACT PAGE START */
+/* * END CONTACT PAGE */
+
+/* * SKILLS PAGE START */
+/* * END SKILLS PAGE */
+
+/* * CERTIFICATIONS PAGE START */
+/* * END CERTIFICATIONS PAGE */
+
+/** GENERAL FOOTER START */
 footer {
   background-color: #4a7c59;
   padding: 0.5rem;
@@ -122,6 +244,7 @@ footer {
 footer p {
   color: #c8d5b9;
 }
+/* * END GENERAL FOOTER */
 
 /** MOBILE */
 @media (max-width: 768px) {
@@ -150,6 +273,25 @@ footer p {
   #presentation {
     padding: 0.75rem; /* Reducir el padding en pantallas pequeñas */
   }
+  /* * END INDEX PAGE */
+
+  /** ABOUT ME PAGE START */
+  #academic-training-and-experience {
+    flex-direction: column; /* Apila los contenedores verticalmente */
+  }
+  /** END ABOUT ME PAGE */
+
+  /* * PORTFOLIO PAGE START */
+  .project-card {
+    flex: 1 1 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
+  }
+  /* * END PORTFOLIO PAGE */
+
+  /* * SERVICES PAGE START */
+  .service-card {
+    flex: 1 1 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
+  }
+  /* * END SERVICES PAGE */
 
   footer p {
     font-size: 0.875rem; /* Ajusta el tamaño de texto en móviles */
