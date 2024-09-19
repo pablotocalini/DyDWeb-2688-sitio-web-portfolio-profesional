@@ -48,6 +48,16 @@ nav li a {
 li a:hover {
   color: black;
 }
+
+nav input {
+  /*no muestra el botón de menu */
+  display: none;
+}
+
+nav label {
+  /*no muestra la etiqueta ☰ */
+  display: none;
+}
 /* * END GENERAL BODY */
 
 /** INDEX PAGE START */
@@ -539,8 +549,50 @@ footer a {
 
 /** ------------------------------------------ MOBILE --------------------------------------------*/
 @media (max-width: 768px) {
-  nav ul {
+  nav {
+    background-color: #4a7c59;
+  }
+
+  nav input:checked ~ ul {
+    /*muestra todas el contenido de todas las etiquetas ul */
     display: block;
+  }
+
+  nav input:checked ~ label {
+    /*muestra todo el contenido de todas las etiquetas label */
+    background: lightgrey;
+  }
+
+  nav label:hover {
+    /*cambia el color de ☰ */
+    background: #4a7c59;
+  }
+
+  li {
+    /*elimina el margen  de cada botón */
+    margin: 0px;
+    text-align: left;
+  }
+
+  nav label {
+    /* dibuja la etiqueta ☰  con formato botón */
+    box-sizing: border-box;
+    display: block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    background-color: 4a7c59;
+  }
+
+  nav ul {
+    /*deja de mostrar el bloque contenedor de los botones horizontales */
+    display: none;
+    background-color: #4a7c59;
   }
 
   /** INDEX PAGE */
