@@ -6,6 +6,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <link
+      rel="stylesheet"
+      href="/styles.css"
+    />
     <title>Portfolio - Tocalini Pablo</title>
   </head>
   <body>
@@ -29,35 +33,40 @@
       </nav>
     </header>
     <main>
-      <img
-        src="img/foto_pablo.jpeg"
-        alt="Picture of Pablo Tocalini"
-        width="300"
-      />
-      <section id="presentation">
-        <h2>Presentación</h2>
-        <p>
-          Mi nombre es Pablo Tocalini, soy Licenciado Kinesiólogo Fisiatra,
-          Especialista en Cuidados Críticos y Estudiante de la Licenciatura en
-          Gestión de Tecnología de la Información (Sistemas).
-        </p>
-      </section>
-      <section id="featured-experience">
-        <h2>Experiencia Destacada</h2>
-        <p>
-          Realicé la residencia de Kinesiología en el Hospital General de Agudos
-          Parmenio Piñero. Luego hice la especialización en Kinesiología en
-          Cuidados Críticos en la Sociedad Argentina de Terapia Intensiva. En
-          este proceso realicé varios trabajos de investigación en salud,
-          publicados en revistas científicas. <br />
-          Además de mi tarea asistencial, llevo adelante proyectos relacionados
-          a la integración de tecnologías en salud, principalmente relacionados
-          con los datos. <br />
-          Dentro del mundo del Software, formo parte del equipo de desarrollo de
-          una pequeña empresa dedicada a proveer servicios con Inteligencia
-          Artificial.
-        </p>
-      </section>
+      <div class="image-section-container">
+        <img
+          src="img/foto_pablo.jpeg"
+          alt="Picture of Pablo Tocalini"
+          width="300"
+          class="responsive-image"
+        />
+        <div>
+          <section id="presentation">
+            <h2>Presentación</h2>
+            <p>
+              Mi nombre es Pablo Tocalini, soy Licenciado Kinesiólogo Fisiatra,
+              Especialista en Cuidados Críticos y Estudiante de la Licenciatura
+              en Gestión de Tecnología de la Información (Sistemas).
+            </p>
+          </section>
+          <section id="featured-experience">
+            <h2>Experiencia Destacada</h2>
+            <p>
+              Realicé la residencia de Kinesiología en el Hospital General de
+              Agudos Parmenio Piñero. Luego hice la especialización en
+              Kinesiología en Cuidados Críticos en la Sociedad Argentina de
+              Terapia Intensiva. En este proceso realicé varios trabajos de
+              investigación en salud, publicados en revistas científicas. <br />
+              Además de mi tarea asistencial, llevo adelante proyectos
+              relacionados a la integración de tecnologías en salud,
+              principalmente relacionados con los datos. <br />
+              Dentro del mundo del Software, formo parte del equipo de
+              desarrollo de una pequeña empresa dedicada a proveer servicios con
+              Inteligencia Artificial.
+            </p>
+          </section>
+        </div>
+      </div>
       <section id="professional-summary">
         <h2>Resumen Profesional</h2>
         <p>
@@ -97,7 +106,13 @@
       </section>
     </main>
     <footer>
-      <p>&copy; 2024 Pablo Tocalini. Todos los derechos reservados.</p>
+      <div class="footer-content">
+        <p class="top-word">Contácteme</p>
+        <hr class="custom-line" />
+        <p class="bottom-words">
+          &copy; 2024 Pablo Tocalini. Todos los derechos reservados.
+        </p>
+      </div>
     </footer>
   </body>
 </html>

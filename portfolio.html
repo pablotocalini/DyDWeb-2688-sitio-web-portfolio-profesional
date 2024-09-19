@@ -6,6 +6,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <link
+      rel="stylesheet"
+      href="/styles.css"
+    />
     <title>Portfolio</title>
   </head>
   <body>
@@ -31,102 +35,126 @@
     <main>
       <section id="featured-projects">
         <h2>Proyectos Destacados</h2>
-        <h3>Desarrollo de un Bot de Telegram - Clínica Basilea (2022-2024)</h3>
-        <ul>
-          <li>
-            <p>
-              Descripcion: Desarrollo de un bot de Telegram para automatizar
-              tareas administrativas dentro de la institución de salud, como la
-              gestión de guardias y el procesamiento de solicitudes de
-              licencias.
-            </p>
-          </li>
-          <li>
-            <p>Herramientas Utilizadas: Node.js, Base de Datos Relacional.</p>
-          </li>
-          <li><p>Rol: Desarrollador.</p></li>
-          <li>
-            <p>
-              Resultados: La automatización mejoró la eficiencia administrativa
-              y la precisión en el manejo de datos.
-            </p>
-          </li>
-        </ul>
-        <h3>
-          Implementación Aplicación Web de Mecánica Pulmonar en la Historia
-          Clínica Electrónica - Instituto Argentino de Diagnóstico y Tratamiento
-          (2021-Actualidad)
-        </h3>
-        <ul>
-          <li>
-            <p>
-              Descripción: Desarrollo e implementación de una aplicación web
-              para calcular la mecánica pulmonar integrada con la historia
-              clínica digital del sanatorio.
-            </p>
-          </li>
-          <li>
-            <p>
-              Herramientas Utilizadas: JavaScript, HTML, CSS (Frontend), Node.js
-              (Backend).
-            </p>
-          </li>
-          <li><p>Rol: Desarrollador.</p></li>
-          <li>
-            <p>
-              Resultados: La herramienta permitió la visualización de datos en
-              tiempo real, facilitando la toma de decisiones clínicas.
-            </p>
-          </li>
-        </ul>
-        <h3>Gestión de Datos en REDCap - Clínica Basilea (2022-2024)</h3>
-        <ul>
-          <li>
-            <p>
-              Descripción: Implementación de procesos de recolección y gestión
-              de datos utilizando REDCap, asegurando la calidad y coherencia de
-              la información almacenada.
-            </p>
-          </li>
-          <li>
-            <p>Herramientas Utilizadas: REDCap, Base de Datos Relacional.</p>
-          </li>
-          <li><p>Rol: Líder de Proyecto.</p></li>
-          <li>
-            <p>
-              Resultados: La estructuración de datos sentó las bases para un
-              análisis exhaustivo y una utilización efectiva de la información
-              para la investigación y la toma de decisiones clínicas.
-            </p>
-          </li>
-        </ul>
-        <h3>
-          Desarrollo de un Sistema de Procesamiento de Textos para Información
-          Clínica - Clínica Basilea (2022-2024)
-        </h3>
-        <ul>
-          <li>
-            <p>
-              Descripción: Desarrollo de un programa en Python para analizar y
-              extraer información de informes médicos diarios, mejorando la
-              recuperación y organización de datos históricos de pacientes.
-            </p>
-          </li>
-          <li>
-            <p>Herramientas Utilizadas: Python, Procesamiento de Texto.</p>
-          </li>
-          <li><p>Rol: Desarrollador.</p></li>
-          <li>
-            <p>
-              Resultados: El sistema mejoró la eficiencia en la gestión de
-              información clínica y permitió análisis más detallados.
-            </p>
-          </li>
-        </ul>
+        <div class="projects-container">
+          <div class="project-card">
+            <h3>
+              Desarrollo de un Bot de Telegram - Clínica Basilea (2022-2024)
+            </h3>
+            <ul>
+              <li>
+                <p>
+                  Descripción: Desarrollo de un bot de Telegram para automatizar
+                  tareas administrativas dentro de la institución de salud, como
+                  la gestión de guardias y el procesamiento de solicitudes de
+                  licencias.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Herramientas Utilizadas: Node.js, Base de Datos Relacional.
+                </p>
+              </li>
+              <li><p>Rol: Desarrollador.</p></li>
+              <li>
+                <p>
+                  Resultados: La automatización mejoró la eficiencia
+                  administrativa y la precisión en el manejo de datos.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="project-card">
+            <h3>
+              Implementación Aplicación Web de Mecánica Pulmonar en la Historia
+              Clínica Electrónica - Instituto Argentino de Diagnóstico y
+              Tratamiento (2021-Actualidad)
+            </h3>
+            <ul>
+              <li>
+                <p>
+                  Descripción: Desarrollo e implementación de una aplicación web
+                  para calcular la mecánica pulmonar integrada con la historia
+                  clínica digital del sanatorio.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Herramientas Utilizadas: JavaScript, HTML, CSS (Frontend),
+                  Node.js (Backend).
+                </p>
+              </li>
+              <li><p>Rol: Desarrollador.</p></li>
+              <li>
+                <p>
+                  Resultados: La herramienta permitió la visualización de datos
+                  en tiempo real, facilitando la toma de decisiones clínicas.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="project-card">
+            <h3>Gestión de Datos en REDCap - Clínica Basilea (2022-2024)</h3>
+            <ul>
+              <li>
+                <p>
+                  Descripción: Implementación de procesos de recolección y
+                  gestión de datos utilizando REDCap, asegurando la calidad y
+                  coherencia de la información almacenada.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Herramientas Utilizadas: REDCap, Base de Datos Relacional.
+                </p>
+              </li>
+              <li><p>Rol: Líder de Proyecto.</p></li>
+              <li>
+                <p>
+                  Resultados: La estructuración de datos sentó las bases para un
+                  análisis exhaustivo y una utilización efectiva de la
+                  información para la investigación y la toma de decisiones
+                  clínicas.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="project-card">
+            <h3>
+              Desarrollo de un Sistema de Procesamiento de Textos para
+              Información Clínica - Clínica Basilea (2022-2024)
+            </h3>
+            <ul>
+              <li>
+                <p>
+                  Descripción: Desarrollo de un programa en Python para analizar
+                  y extraer información de informes médicos diarios, mejorando
+                  la recuperación y organización de datos históricos de
+                  pacientes.
+                </p>
+              </li>
+              <li>
+                <p>Herramientas Utilizadas: Python, Procesamiento de Texto.</p>
+              </li>
+              <li><p>Rol: Desarrollador.</p></li>
+              <li>
+                <p>
+                  Resultados: El sistema mejoró la eficiencia en la gestión de
+                  información clínica y permitió análisis más detallados.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
-      <p>&copy; 2024 Pablo Tocalini. Todos los derechos reservados.</p>
+      <div class="footer-content">
+        <p class="top-word">Contácteme</p>
+        <hr class="custom-line" />
+        <p class="bottom-words">
+          &copy; 2024 Pablo Tocalini. Todos los derechos reservados.
+        </p>
+      </div>
     </footer>
   </body>
 </html>

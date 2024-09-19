@@ -1,0 +1,424 @@
+/* Asegura que el cuerpo y el contenedor principal ocupen el 100% de la altura de la ventana */
+html {
+  font-size: 16px;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #fefaee;
+}
+
+/** GENERAL BODY */
+/* Contenedor principal configurado como flexbox */
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+/** general main */
+/* El main se expande para ocupar el espacio disponible */
+main {
+  flex: 1;
+  margin: 1rem;
+}
+
+/* General Navbar */
+nav ul {
+  margin-top: 0;
+  background-color: #4a7c59;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+  list-style: none;
+}
+
+nav ul li {
+  color: #c8d5b9;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #c8d5b9;
+}
+
+li a:hover {
+  color: black;
+}
+/* * END GENERAL BODY */
+
+/** INDEX PAGE START */
+/* Section of image, presentation and experience */
+.image-section-container {
+  display: flex;
+  gap: 1rem;
+  align-items: stretch; /* Hace que ambos elementos (imagen y contenedor) se estiren al mismo alto */
+  margin: 0 auto;
+}
+
+.image-section-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Separa los <section> para que ocupen todo el alto disponible */
+}
+
+.responsive-image {
+  object-fit: cover;
+  max-width: 100%; /* La imagen nunca será más ancha que su contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 0.5rem; /* Si quieres darle bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+#presentation,
+#featured-experience,
+#professional-summary {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  align-self: stretch;
+  background-color: #fff;
+  flex: 1; /* Permite que los <section> se expandan para ocupar el mismo alto */
+  margin: 0.5rem;
+  /* Shadows/Card */
+  box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04);
+}
+/** END INDEX PAGE */
+
+/** ABOUT ME PAGE START  */
+#short-biography,
+#professional-goals {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  align-self: stretch;
+  background-color: #fff;
+  flex: 1; /* Permite que los <section> se expandan para ocupar el mismo alto */
+  margin: 2rem, 0;
+  /* Shadows/Card */
+  box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04);
+}
+
+#academic-training-and-experience {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Espacio entre los dos divs */
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04);
+  margin: 2rem 0;
+}
+
+.academic-container {
+  padding: 1rem;
+  background-color: #f9f9f9; /* Opcional: Cambiar el fondo de los contenedores individuales */
+  border-radius: 8px; /* Redondea los bordes de los contenedores */
+}
+/** END ABOUT ME PAGE */
+
+/* * PORTFOLIO PAGE START */
+#featured-projects {
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04);
+  margin: 2rem 0;
+}
+
+#featured-projects h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+/* Contenedor de las tarjetas de proyecto */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a la siguiente línea si es necesario */
+  gap: 1rem; /* Espacio entre las tarjetas */
+  justify-content: center; /* Centra las tarjetas en el contenedor */
+}
+
+/* Estilos para cada tarjeta de proyecto */
+.project-card {
+  flex: 1 1 calc(50% - 1rem); /* Ocupa la mitad del ancho menos el espacio del gap */
+  box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho */
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04);
+  padding: 1rem;
+  margin: 0;
+}
+
+.project-card h3 {
+  text-align: center; /* Centra el texto del encabezado */
+}
+
+/* * END PORTFOLIO PAGE */
+
+/* * RESUME PAGE START */
+/* * END RESUME PAGE */
+
+/* * SERVICES PAGE START */
+#services {
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04);
+  margin: 2rem 0;
+}
+
+#services h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+/* Contenedor de las tarjetas de proyecto */
+.services-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a la siguiente línea si es necesario */
+  gap: 1rem; /* Espacio entre las tarjetas */
+  justify-content: center; /* Centra las tarjetas en el contenedor */
+}
+
+/* Estilos para cada tarjeta de proyecto */
+.service-card {
+  flex: 1 1 calc(50% - 1rem); /* Ocupa la mitad del ancho menos el espacio del gap */
+  box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho */
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04);
+  padding: 1rem;
+  margin: 0;
+}
+
+.service-card h3 {
+  text-align: center; /* Centra el texto del encabezado */
+}
+/* * END SERVICES PAGE */
+
+/* * TESTIMONIALS PAGE START */
+
+#testimonials {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-self: stretch;
+  background-color: #fff;
+  flex: 1; /* Permite que los <section> se expandan para ocupar el mismo alto */
+  margin: 2rem, 0;
+  /* Shadows/Card */
+  box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04);
+}
+
+#testimonials h2 {
+  text-align: center; /* Centra el texto del encabezado */
+}
+/* * END TESTIMONIALSPAGE */
+
+/* * CONTACT PAGE START */
+/* * END CONTACT PAGE */
+
+/* * SKILLS PAGE START */
+
+/* Contenedor flexible para las subtarjetas */
+#skills {
+  display: flex;
+  flex-direction: column; /* Para que el título esté arriba */
+  align-items: center; /* Centra el contenido horizontalmente */
+  gap: 1rem; /* Espacio entre las dos subtarjetas */
+  flex-wrap: wrap; /* Permite que las subtarjetas se apilen en pantallas pequeñas */
+  background-color: #fff; /* Fondo blanco */
+  padding: 2rem; /* Espaciado interno */
+  margin: 1rem auto; /* Centramos la tarjeta */
+  box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04); /* Sombra */
+  max-width: 75rem; /* Ancho máximo para la tarjeta */
+  border-radius: 0.5rem; /* Bordes redondeados */
+}
+
+#skills h2 {
+  width: 100%; /* Hace que el título ocupe todo el ancho */
+  text-align: center; /* Centra el texto del título */
+  margin-bottom: 1.25rem; /* Equivalente a 20px de margen inferior */
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-around; /* Para que las tarjetas se distribuyan a lo ancho */
+  width: 100%;
+  flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea */
+}
+
+/* Subtarjetas (divs de clases "skill-type") */
+.skill-card {
+  background-color: #f5f5f5;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  box-shadow: 0px 0px 0.625rem rgba(0, 0, 0, 0.1);
+  width: 45%; /* Mantén el ancho en porcentaje */
+  flex: 1; /* Permite que ambas subtarjetas se expandan proporcionalmente */
+  margin: 1rem;
+}
+/* * END SKILLS PAGE */
+
+/* * CERTIFICATIONS PAGE START */
+/* Contenedor flexible para las subtarjetas */
+#certifications-awards {
+  display: flex;
+  flex-direction: column; /* Para que el título esté arriba */
+  align-items: center; /* Centra el contenido horizontalmente */
+  gap: 1rem; /* Espacio entre las dos subtarjetas */
+  flex-wrap: wrap; /* Permite que las subtarjetas se apilen en pantallas pequeñas */
+  background-color: #fff; /* Fondo blanco */
+  padding: 2rem; /* Espaciado interno */
+  margin: 1rem auto; /* Centramos la tarjeta */
+  box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04); /* Sombra */
+  border-radius: 0.5rem; /* Bordes redondeados */
+}
+
+#certifications-awards h2 {
+  width: 100%; /* Hace que el título ocupe todo el ancho */
+  text-align: center; /* Centra el texto del título */
+  margin-bottom: 1.25rem; /* Equivalente a 20px de margen inferior */
+}
+
+.certifications-awards-container {
+  width: 100%;
+}
+
+/* Subtarjetas (divs de clases "skill-type") */
+.certifications-awards-card {
+  background-color: #f5f5f5;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  box-shadow: 0px 0px 0.625rem rgba(0, 0, 0, 0.1);
+
+  flex: 1; /* Permite que ambas subtarjetas se expandan proporcionalmente */
+  margin: 1rem;
+}
+/* * END CERTIFICATIONS PAGE */
+
+/** GENERAL FOOTER START */
+footer {
+  background-color: #4a7c59;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-word {
+  margin: 0;
+}
+
+.custom-line {
+  width: 50%; /* Ancho de la línea */
+  height: 0.1875rem; /* Espesor de la línea */
+  background-color: #c8d5b9;
+  border: none;
+  margin: 0.625rem 0;
+}
+
+.bottom-words {
+  font-size: 1rem;
+  margin: 0;
+}
+
+footer p {
+  color: #c8d5b9;
+}
+/* * END GENERAL FOOTER */
+
+/** ------------------------------------------ MOBILE --------------------------------------------*/
+@media (max-width: 768px) {
+  nav ul {
+    display: block;
+  }
+
+  /** INDEX PAGE */
+  .image-section-container {
+    flex-direction: column; /* Imagen y texto uno debajo del otro en pantallas pequeñas */
+    gap: 0.75rem;
+    align-items: center;
+  }
+
+  .image-section-container > div {
+    width: 100%; /* Asegura que el contenedor de los <section> ocupe el 100% del ancho en pantallas pequeñas */
+  }
+  .responsive-image {
+    max-width: 100%; /* O un valor menor para reducirla en pantallas pequeñas */
+  }
+
+  .custom-line {
+    width: 80%; /* Ancho de la línea en dispositivos pequeños */
+  }
+
+  #presentation {
+    padding: 0.75rem; /* Reducir el padding en pantallas pequeñas */
+  }
+  /* * END INDEX PAGE */
+
+  /** ABOUT ME PAGE START */
+  #academic-training-and-experience {
+    flex-direction: column; /* Apila los contenedores verticalmente */
+  }
+  /** END ABOUT ME PAGE */
+
+  /* * PORTFOLIO PAGE START */
+  .project-card {
+    flex: 1 1 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
+  }
+  /* * END PORTFOLIO PAGE */
+
+  /* * SERVICES PAGE START */
+  .service-card {
+    flex: 1 1 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
+  }
+  /* * END SERVICES PAGE */
+
+  /* * SkillS PAGE START */
+  .skills-container {
+    flex-direction: column; /* Las tarjetas se colocarán en una columna */
+    align-items: center; /* Alinea las tarjetas al centro */
+  }
+
+  .skill-card {
+    width: 100%; /* Las tarjetas ocuparán todo el ancho disponible */
+    margin: 1rem 0; /* Espaciado entre las tarjetas */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+  }
+
+  /* * END SKILLS PAGE */
+
+  /* * CERTIFICATIONS AND AWARDS PAGE START */
+  .certifications-awards-container {
+    flex-direction: column; /* Las tarjetas se colocarán en una columna */
+    align-items: center; /* Alinea las tarjetas al centro */
+  }
+
+  .certifications-awards-card {
+    width: 100%; /* Las tarjetas ocuparán todo el ancho disponible */
+    margin: 1rem 0; /* Espaciado entre las tarjetas */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+  }
+
+  /* * END CERTIFICATIONS AND AWARDS PAGE */
+
+  /** FOOTER */
+  footer p {
+    font-size: 0.875rem; /* Ajusta el tamaño de texto en móviles */
+  }
+}
+
+@media (max-width: 400px) {
+  nav ul {
+    font-size: 0.875rem; /* Reduce tamaño de los enlaces en pantallas muy pequeñas */
+  }
+}
