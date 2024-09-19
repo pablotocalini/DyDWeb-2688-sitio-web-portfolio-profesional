@@ -76,6 +76,7 @@ li a:hover {
 #presentation,
 #featured-experience,
 #professional-summary {
+  border-radius: 0.625rem;
   display: flex;
   padding: 1rem;
   flex-direction: column;
@@ -93,6 +94,7 @@ li a:hover {
 /** ABOUT ME PAGE START  */
 #short-biography,
 #professional-goals {
+  border-radius: 0.625rem;
   display: flex;
   padding: 1rem;
   flex-direction: column;
@@ -107,6 +109,7 @@ li a:hover {
 }
 
 #academic-training-and-experience {
+  border-radius: 0.625rem;
   display: flex;
   flex-direction: column;
   gap: 1rem; /* Espacio entre los dos divs */
@@ -125,6 +128,7 @@ li a:hover {
 
 /* * PORTFOLIO PAGE START */
 #featured-projects {
+  border-radius: 0.625rem;
   padding: 2rem;
   background-color: #fff;
   box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04);
@@ -165,6 +169,7 @@ li a:hover {
 
 /* * SERVICES PAGE START */
 #services {
+  border-radius: 0.625rem;
   padding: 2rem;
   background-color: #fff;
   box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04);
@@ -202,6 +207,7 @@ li a:hover {
 /* * TESTIMONIALS PAGE START */
 
 #testimonials {
+  border-radius: 0.625rem;
   display: flex;
   padding: 1rem;
   flex-direction: column;
@@ -332,6 +338,10 @@ footer {
 }
 
 footer p {
+  color: #c8d5b9;
+}
+footer a {
+  text-decoration: none;
   color: #c8d5b9;
 }
 /* * END GENERAL FOOTER */
