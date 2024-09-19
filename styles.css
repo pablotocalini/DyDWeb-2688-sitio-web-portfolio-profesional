@@ -200,15 +200,105 @@ li a:hover {
 /* * END SERVICES PAGE */
 
 /* * TESTIMONIALS PAGE START */
+
+#testimonials {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-self: stretch;
+  background-color: #fff;
+  flex: 1; /* Permite que los <section> se expandan para ocupar el mismo alto */
+  margin: 2rem, 0;
+  /* Shadows/Card */
+  box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04);
+}
+
+#testimonials h2 {
+  text-align: center; /* Centra el texto del encabezado */
+}
 /* * END TESTIMONIALSPAGE */
 
 /* * CONTACT PAGE START */
 /* * END CONTACT PAGE */
 
 /* * SKILLS PAGE START */
+
+/* Contenedor flexible para las subtarjetas */
+#skills {
+  display: flex;
+  flex-direction: column; /* Para que el título esté arriba */
+  align-items: center; /* Centra el contenido horizontalmente */
+  gap: 1rem; /* Espacio entre las dos subtarjetas */
+  flex-wrap: wrap; /* Permite que las subtarjetas se apilen en pantallas pequeñas */
+  background-color: #fff; /* Fondo blanco */
+  padding: 2rem; /* Espaciado interno */
+  margin: 1rem auto; /* Centramos la tarjeta */
+  box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04); /* Sombra */
+  max-width: 75rem; /* Ancho máximo para la tarjeta */
+  border-radius: 0.5rem; /* Bordes redondeados */
+}
+
+#skills h2 {
+  width: 100%; /* Hace que el título ocupe todo el ancho */
+  text-align: center; /* Centra el texto del título */
+  margin-bottom: 1.25rem; /* Equivalente a 20px de margen inferior */
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-around; /* Para que las tarjetas se distribuyan a lo ancho */
+  width: 100%;
+  flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea */
+}
+
+/* Subtarjetas (divs de clases "skill-type") */
+.skill-card {
+  background-color: #f5f5f5;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  box-shadow: 0px 0px 0.625rem rgba(0, 0, 0, 0.1);
+  width: 45%; /* Mantén el ancho en porcentaje */
+  flex: 1; /* Permite que ambas subtarjetas se expandan proporcionalmente */
+  margin: 1rem;
+}
 /* * END SKILLS PAGE */
 
 /* * CERTIFICATIONS PAGE START */
+/* Contenedor flexible para las subtarjetas */
+#certifications-awards {
+  display: flex;
+  flex-direction: column; /* Para que el título esté arriba */
+  align-items: center; /* Centra el contenido horizontalmente */
+  gap: 1rem; /* Espacio entre las dos subtarjetas */
+  flex-wrap: wrap; /* Permite que las subtarjetas se apilen en pantallas pequeñas */
+  background-color: #fff; /* Fondo blanco */
+  padding: 2rem; /* Espaciado interno */
+  margin: 1rem auto; /* Centramos la tarjeta */
+  box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04); /* Sombra */
+  border-radius: 0.5rem; /* Bordes redondeados */
+}
+
+#certifications-awards h2 {
+  width: 100%; /* Hace que el título ocupe todo el ancho */
+  text-align: center; /* Centra el texto del título */
+  margin-bottom: 1.25rem; /* Equivalente a 20px de margen inferior */
+}
+
+.certifications-awards-container {
+  width: 100%;
+}
+
+/* Subtarjetas (divs de clases "skill-type") */
+.certifications-awards-card {
+  background-color: #f5f5f5;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  box-shadow: 0px 0px 0.625rem rgba(0, 0, 0, 0.1);
+
+  flex: 1; /* Permite que ambas subtarjetas se expandan proporcionalmente */
+  margin: 1rem;
+}
 /* * END CERTIFICATIONS PAGE */
 
 /** GENERAL FOOTER START */
@@ -246,7 +336,7 @@ footer p {
 }
 /* * END GENERAL FOOTER */
 
-/** MOBILE */
+/** ------------------------------------------ MOBILE --------------------------------------------*/
 @media (max-width: 768px) {
   nav ul {
     display: block;
@@ -293,6 +383,35 @@ footer p {
   }
   /* * END SERVICES PAGE */
 
+  /* * SkillS PAGE START */
+  .skills-container {
+    flex-direction: column; /* Las tarjetas se colocarán en una columna */
+    align-items: center; /* Alinea las tarjetas al centro */
+  }
+
+  .skill-card {
+    width: 100%; /* Las tarjetas ocuparán todo el ancho disponible */
+    margin: 1rem 0; /* Espaciado entre las tarjetas */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+  }
+
+  /* * END SKILLS PAGE */
+
+  /* * CERTIFICATIONS AND AWARDS PAGE START */
+  .certifications-awards-container {
+    flex-direction: column; /* Las tarjetas se colocarán en una columna */
+    align-items: center; /* Alinea las tarjetas al centro */
+  }
+
+  .certifications-awards-card {
+    width: 100%; /* Las tarjetas ocuparán todo el ancho disponible */
+    margin: 1rem 0; /* Espaciado entre las tarjetas */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+  }
+
+  /* * END CERTIFICATIONS AND AWARDS PAGE */
+
+  /** FOOTER */
   footer p {
     font-size: 0.875rem; /* Ajusta el tamaño de texto en móviles */
   }
