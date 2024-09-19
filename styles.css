@@ -48,6 +48,16 @@ nav li a {
 li a:hover {
   color: black;
 }
+
+nav input {
+  /*no muestra el botón de menu */
+  display: none;
+}
+
+nav label {
+  /*no muestra la etiqueta ☰ */
+  display: none;
+}
 /* * END GENERAL BODY */
 
 /** INDEX PAGE START */
@@ -76,6 +86,7 @@ li a:hover {
 #presentation,
 #featured-experience,
 #professional-summary {
+  border-radius: 0.625rem;
   display: flex;
   padding: 1rem;
   flex-direction: column;
@@ -93,6 +104,7 @@ li a:hover {
 /** ABOUT ME PAGE START  */
 #short-biography,
 #professional-goals {
+  border-radius: 0.625rem;
   display: flex;
   padding: 1rem;
   flex-direction: column;
@@ -107,6 +119,7 @@ li a:hover {
 }
 
 #academic-training-and-experience {
+  border-radius: 0.625rem;
   display: flex;
   flex-direction: column;
   gap: 1rem; /* Espacio entre los dos divs */
@@ -125,6 +138,7 @@ li a:hover {
 
 /* * PORTFOLIO PAGE START */
 #featured-projects {
+  border-radius: 0.625rem;
   padding: 2rem;
   background-color: #fff;
   box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04);
@@ -161,10 +175,99 @@ li a:hover {
 /* * END PORTFOLIO PAGE */
 
 /* * RESUME PAGE START */
+
+.experience-card,
+#education-container {
+  border-radius: 0.625rem;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  align-self: stretch;
+  background-color: #fff;
+  flex: 1; /* Permite que los <section> se expandan para ocupar el mismo alto */
+  margin: 2rem, 0;
+  /* Shadows/Card */
+  box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04);
+}
+
+.experience-card > ul > li {
+  font-weight: bold;
+}
+
+.experience-card > ul > li > ul > li {
+  font-weight: normal;
+}
+
+#education {
+  display: flex;
+  flex-direction: column; /* Para que el título esté arriba */
+  align-items: start;
+  gap: 1rem; /* Espacio entre las dos subtarjetas */
+  flex-wrap: wrap; /* Permite que las subtarjetas se apilen en pantallas pequeñas */
+  background-color: #fff; /* Fondo blanco */
+  padding: 1rem; /* Espaciado interno */
+  margin: 1rem auto; /* Centramos la tarjeta */
+  box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04); /* Sombra */
+  border-radius: 0.625rem; /* Bordes redondeados */
+}
+
+.education-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.education-section {
+  display: flex;
+}
+
+.education-card {
+  background-color: #f5f5f5;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  box-shadow: 0px 0px 0.625rem rgba(0, 0, 0, 0.1);
+
+  flex: 1; /* Permite que ambas subtarjetas se expandan proporcionalmente */
+  margin: 1rem;
+}
+
+.education-card h3 {
+  text-align: center;
+}
+
+.education-courses {
+  background-color: #f5f5f5;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  box-shadow: 0px 0px 0.625rem rgba(0, 0, 0, 0.1);
+
+  flex: 1; /* Permite que ambas subtarjetas se expandan proporcionalmente */
+  margin: 1rem;
+}
+
+.education-courses h3 {
+  text-align: center;
+}
+
+.courses-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.course-card {
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  box-shadow: 0px 0px 0.625rem rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+}
+
 /* * END RESUME PAGE */
 
 /* * SERVICES PAGE START */
 #services {
+  border-radius: 0.625rem;
   padding: 2rem;
   background-color: #fff;
   box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04);
@@ -202,6 +305,7 @@ li a:hover {
 /* * TESTIMONIALS PAGE START */
 
 #testimonials {
+  border-radius: 0.625rem;
   display: flex;
   padding: 1rem;
   flex-direction: column;
@@ -220,6 +324,109 @@ li a:hover {
 /* * END TESTIMONIALSPAGE */
 
 /* * CONTACT PAGE START */
+
+#contact-information,
+#contact-form {
+  border-radius: 0.625rem;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-self: stretch;
+  background-color: #fff;
+  flex: 1; /* Permite que los <section> se expandan para ocupar el mismo alto */
+  margin: 2rem, 0;
+  /* Shadows/Card */
+  box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04);
+}
+
+#contact-information {
+  align-items: center;
+}
+
+/* Contact Information Section */
+#contact-information {
+  margin-bottom: 2rem;
+}
+
+#contact-information h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+#contact-information ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#contact-information ul li {
+  margin-bottom: 0.5rem;
+}
+
+#contact-information a {
+  color: #4a7c59;
+  text-decoration: none;
+}
+
+#contact-information a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Form Section */
+/* Estilo de la card para el formulario */
+
+/* Headers alineados al centro */
+#contact-form h2,
+#contact-form h4,
+#contact-form h5 {
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: 1rem; /* Separación entre headers */
+}
+
+form {
+  margin: 2rem auto; /* Centramos la card y agregamos margen */
+  padding: 2rem; /* Relleno interno */
+  background-color: #f4f4f4; /* Color ligeramente más oscuro */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 1rem; /* Bordes redondeados */
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+#contact-form input[type='text'],
+#contact-form input[type='email'],
+#contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem auto; /* Centrado automático */
+  border: 1px solid #4a7c59;
+  border-radius: 0.3125rem;
+  box-sizing: border-box; /* Asegura que el padding esté dentro del ancho total */
+}
+
+#contact-form textarea {
+  resize: vertical;
+}
+
+#contact-form input[type='submit'] {
+  display: block;
+  background-color: #4a7c59;
+  color: #c8d5b9;
+  border: none;
+  margin: 1.5rem auto;
+  padding: 0.8rem 2rem;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  box-sizing: border-box; /* Mantener consistencia en el padding */
+}
+
+#contact-form input[type='submit']:hover {
+  background-color: #142005;
+}
 /* * END CONTACT PAGE */
 
 /* * SKILLS PAGE START */
@@ -334,12 +541,58 @@ footer {
 footer p {
   color: #c8d5b9;
 }
+footer a {
+  text-decoration: none;
+  color: #c8d5b9;
+}
 /* * END GENERAL FOOTER */
 
 /** ------------------------------------------ MOBILE --------------------------------------------*/
 @media (max-width: 768px) {
-  nav ul {
+  nav {
+    background-color: #4a7c59;
+  }
+
+  nav input:checked ~ ul {
+    /*muestra todas el contenido de todas las etiquetas ul */
     display: block;
+  }
+
+  nav input:checked ~ label {
+    /*muestra todo el contenido de todas las etiquetas label */
+    background: lightgrey;
+  }
+
+  nav label:hover {
+    /*cambia el color de ☰ */
+    background: #4a7c59;
+  }
+
+  li {
+    /*elimina el margen  de cada botón */
+    margin: 0px;
+    text-align: left;
+  }
+
+  nav label {
+    /* dibuja la etiqueta ☰  con formato botón */
+    box-sizing: border-box;
+    display: block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    background-color: 4a7c59;
+  }
+
+  nav ul {
+    /*deja de mostrar el bloque contenedor de los botones horizontales */
+    display: none;
+    background-color: #4a7c59;
   }
 
   /** INDEX PAGE */
@@ -376,6 +629,16 @@ footer p {
     flex: 1 1 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
   }
   /* * END PORTFOLIO PAGE */
+
+  /** RESUME PAGE START */
+  .education-section {
+    flex-direction: column;
+  }
+
+  .courses-grid {
+    flex-direction: column;
+  }
+  /** END RESUME PAGE */
 
   /* * SERVICES PAGE START */
   .service-card {

@@ -15,6 +15,11 @@
   <body>
     <header>
       <nav>
+        <input
+          type="checkbox"
+          id="menu"
+        />
+        <label for="menu"> ☰ </label>
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="about-me.html">Sobre Mí</a></li>
@@ -25,195 +30,200 @@
           <li><a href="contact.html">Contacto</a></li>
           <li><a href="skills.html">Habilidades</a></li>
           <li>
-            <a href="certifications-awards.html"
-              >Certificaciones y Reconocimientos</a
-            >
+            <a href="certifications-awards.html">Certificaciones</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
       <section id="work-experience">
-        <h2>Experiencia Laboral</h2>
-        <ul>
-          <li>
-            Desarrollador Back-End: Tromen Software. 2023 - Actualidad
-            <ul>
-              <li>
-                <p>
-                  Contribuyo como desarrollador back-end, colaborando para
-                  mejorar la funcionalidad y rendimiento de nuestro innovador
-                  producto. Nuestra plataforma utiliza LLMs, enriqueciendo las
-                  interacciones de los usuarios con capacidades avanzadas de
-                  procesamiento del lenguaje.
-                </p>
-              </li>
-              <li>
-                <p>
-                  Participo en la integración de diversas APIs en nuestro
-                  sistema, incluyendo OpenAI, META y Mercado Libre, para
-                  proporcionar a los usuarios una función de asistente virtual
-                  inteligente (a través de ChatGPT), optimizando los procesos de
-                  ventas y la participación de los usuarios.
-                </p>
-              </li>
-              <li>
-                <p>
-                  Las tecnologías empleadas incluyen Node.js, TypeScript,
-                  NestJS, PostgreSQL, Docker, TypeORM, GitHub y React.js. A
-                  través de esfuerzos colaborativos, continuamente refinamos
-                  nuestras soluciones, buscando mejorar el rendimiento y la
-                  escalabilidad para satisfacer las necesidades en constante
-                  evolución de nuestros usuarios.
-                </p>
-              </li>
-            </ul>
-          </li>
-          <li>
-            Software Developer: Clínica Basilea. 2022 - 2024
-            <ul>
-              <li>
-                <p>
-                  Se me ha confiado la tarea de encabezar varios proyectos
-                  destinados a aprovechar la tecnología para mejorar la
-                  eficiencia operativa e impulsar la innovación.
-                </p>
-              </li>
-              <li>
-                <p>
-                  Uno de mis logros clave fue colaborar con un ingeniero en
-                  sistemas para desarrollar un Bot de Telegram usando Node.js.
-                  Esta innovadora herramienta automatizó una gran cantidad de
-                  tareas administrativas dentro de la institución de salud, como
-                  la gestión de guardias y el procesamiento de solicitudes de
-                  licencias, mientras registraba toda la información en una base
-                  de datos relacional.
-                </p>
-              </li>
-              <li>
-                <p>
-                  Adicionalmente, lideré el diseño e implementación de procesos
-                  de recolección de datos del paciente utilizando el software
-                  REDCap. Esta iniciativa garantiza la calidad y coherencia de
-                  los datos almacenados en una base de datos relacional,
-                  sentando las bases para un análisis exhaustivo y la posterior
-                  utilización de los datos. La información recogida se obtiene
-                  tras completar un registro estructurado, asegurando su
-                  coherencia.
-                </p>
-              </li>
-              <li>
-                <p>
-                  Además, desarrollé un programa de procesamiento de textos,
-                  codificado en Python, dedicado a analizar y extraer
-                  información histórica de pacientes a partir de informes
-                  médicos diarios. Este sistema permite la recuperación y
-                  organización precisa de datos cruciales de texto no
-                  estructurado, lo que facilita un análisis e interpretación
-                  exhaustivos.
-                </p>
-              </li>
-            </ul>
-          </li>
-          <li>
-            Software Developer: Instituto Argentino de Diagnóstico y
-            Tratamiento. 2021 - Actualidad
-            <ul>
-              <li>
-                <p>
-                  Implementación de una aplicación web para calcular la Mecánica
-                  Pulmonar:
-                </p>
-                <ul>
-                  <li>
-                    <p>
-                      Estoy involucrado en un gran proyecto para implementar una
-                      aplicación web integrada con la historia clínica digital
-                      del sanatorio, para calcular la Mecánica Pulmonar de los
-                      pacientes, una herramienta crucial durante la pandemia
-                      para tomar decisiones rápidas e informadas. <br />
-                      Esta aplicación, con un frontend en JavaScript nativo,
-                      HTML y CSS y un backend basado en Node.js, permite el
-                      ingreso y almacenamiento eficiente de datos, así como la
-                      visualización de resultados a través de tableros en tiempo
-                      real.
-                    </p>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <p>
-              Profesor adjunto de Informática Biomédica I y II: Universidad
-              Abierta Interamericana. 2022 - 2023.
-            </p>
-          </li>
-          <li>
-            <p>
-              Kinesiólogo Titular de Guardia de Terapia Intensiva: Hospital
-              Bernardino Rivadavia. 2024 - Actualidad.
-            </p>
-          </li>
-          <li><p>Kinesiólogo Respiratorio: Clínica Basilea. 2017 - 2024</p></li>
-          <li>
-            <p>
-              Kinesiólogo Respiratorio: Instituto Argentino de Diagnóstico y
-              Tratamiento. 2017 - Actualidad
-            </p>
-          </li>
-        </ul>
+        <div class="experience-card">
+          <h2>Experiencia Laboral</h2>
+          <ul>
+            <li>
+              Desarrollador Back-End: Tromen Software. 2023 - Actualidad
+              <ul>
+                <li>
+                  <p>
+                    Contribuyo como desarrollador back-end, colaborando para
+                    mejorar la funcionalidad y rendimiento de nuestro innovador
+                    producto. Nuestra plataforma utiliza LLMs, enriqueciendo las
+                    interacciones de los usuarios con capacidades avanzadas de
+                    procesamiento del lenguaje.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Participo en la integración de diversas APIs en nuestro
+                    sistema, incluyendo OpenAI, META y Mercado Libre, para
+                    proporcionar a los usuarios una función de asistente virtual
+                    inteligente (a través de ChatGPT), optimizando los procesos
+                    de ventas y la participación de los usuarios.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Las tecnologías empleadas incluyen Node.js, TypeScript,
+                    NestJS, PostgreSQL, Docker, TypeORM, GitHub y React.js. A
+                    través de esfuerzos colaborativos, continuamente refinamos
+                    nuestras soluciones, buscando mejorar el rendimiento y la
+                    escalabilidad para satisfacer las necesidades en constante
+                    evolución de nuestros usuarios.
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              Software Developer: Clínica Basilea. 2022 - 2024
+              <ul>
+                <li>
+                  <p>
+                    Se me ha confiado la tarea de encabezar varios proyectos
+                    destinados a aprovechar la tecnología para mejorar la
+                    eficiencia operativa e impulsar la innovación.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Uno de mis logros clave fue colaborar con un ingeniero en
+                    sistemas para desarrollar un Bot de Telegram usando Node.js.
+                    Esta innovadora herramienta automatizó una gran cantidad de
+                    tareas administrativas dentro de la institución de salud,
+                    como la gestión de guardias y el procesamiento de
+                    solicitudes de licencias, mientras registraba toda la
+                    información en una base de datos relacional.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Adicionalmente, lideré el diseño e implementación de
+                    procesos de recolección de datos del paciente utilizando el
+                    software REDCap. Esta iniciativa garantiza la calidad y
+                    coherencia de los datos almacenados en una base de datos
+                    relacional, sentando las bases para un análisis exhaustivo y
+                    la posterior utilización de los datos. La información
+                    recogida se obtiene tras completar un registro estructurado,
+                    asegurando su coherencia.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Además, desarrollé un programa de procesamiento de textos,
+                    codificado en Python, dedicado a analizar y extraer
+                    información histórica de pacientes a partir de informes
+                    médicos diarios. Este sistema permite la recuperación y
+                    organización precisa de datos cruciales de texto no
+                    estructurado, lo que facilita un análisis e interpretación
+                    exhaustivos.
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              Software Developer: Instituto Argentino de Diagnóstico y
+              Tratamiento. 2021 - Actualidad
+              <ul>
+                <li>
+                  <p>
+                    Implementación de una aplicación web para calcular la
+                    Mecánica Pulmonar:
+                  </p>
+                  <ul>
+                    <li>
+                      <p>
+                        Estoy involucrado en un gran proyecto para implementar
+                        una aplicación web integrada con la historia clínica
+                        digital del sanatorio, para calcular la Mecánica
+                        Pulmonar de los pacientes, una herramienta crucial
+                        durante la pandemia para tomar decisiones rápidas e
+                        informadas. <br />
+                        Esta aplicación, con un frontend en JavaScript nativo,
+                        HTML y CSS y un backend basado en Node.js, permite el
+                        ingreso y almacenamiento eficiente de datos, así como la
+                        visualización de resultados a través de tableros en
+                        tiempo real.
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p>
+                Profesor adjunto de Informática Biomédica I y II: Universidad
+                Abierta Interamericana. 2022 - 2023.
+              </p>
+            </li>
+            <li>
+              <p>
+                Kinesiólogo Titular de Guardia de Terapia Intensiva: Hospital
+                Bernardino Rivadavia. 2024 - Actualidad.
+              </p>
+            </li>
+            <li>
+              <p>Kinesiólogo Respiratorio: Clínica Basilea. 2017 - 2024</p>
+            </li>
+            <li>
+              <p>
+                Kinesiólogo Respiratorio: Instituto Argentino de Diagnóstico y
+                Tratamiento. 2017 - Actualidad
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section id="education">
-        <h2>Educacion</h2>
-        <ul>
-          <li>
-            Nivel Universitario
-            <ul>
-              <li>
-                <p>
-                  Licenciado Kinesiólogo Fisiatra. <br />
-                  Universidad de Buenos Aires. <br />
-                  2006 - 2013.
-                </p>
-              </li>
-              <li>
-                <p>
-                  Licenciatura en Gestión de Tecnología de la Información
-                  (Sistemas). <br />
-                  UADE. <br />
-                  2024 - Actualidad.
-                </p>
-              </li>
-            </ul>
-          </li>
-          <li>
-            Cursos de Especialización
-            <ul>
-              <li>
-                <p>
-                  Residencia de kinesiología y fisiatría del gobierno de la
-                  ciudad de buenos aires. <br />
-                  Hospital General de Agudos “P. Piñero”, Varela 1301 C.A.B.A.
-                  <br />
-                  2014 - 2017. Finalizada
-                </p>
-              </li>
-              <li>
-                <p>
-                  Carrera de especialización en kinefisiatría respiratoria
-                  crítica. <br />
-                  Sociedad Argentina de Terapia Intensiva. Personería Jurídica
-                  Nº 2481. <br />
-                  2018 - 2019. Final aprobado
-                </p>
-              </li>
-            </ul>
-          </li>
-          <li>
-            Cursos
-            <ul>
-              <li>
+        <h2>Educación</h2>
+        <div class="education-container">
+          <div class="education-section">
+            <div class="education-card">
+              <h3>Nivel Universitario</h3>
+              <ul>
+                <li>
+                  <p>
+                    Licenciado Kinesiólogo Fisiatra. <br />
+                    Universidad de Buenos Aires. <br />
+                    2006 - 2013.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Licenciatura en Gestión de Tecnología de la Información
+                    (Sistemas). <br />
+                    UADE. <br />
+                    2024 - Actualidad.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="education-card">
+              <h3>Cursos de Especialización</h3>
+              <ul>
+                <li>
+                  <p>
+                    Residencia de kinesiología y fisiatría del gobierno de la
+                    ciudad de Buenos Aires. <br />
+                    Hospital General de Agudos “P. Piñero”, Varela 1301 C.A.B.A.
+                    <br />
+                    2014 - 2017. Finalizada
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Carrera de especialización en kinefisiatría respiratoria
+                    crítica. <br />
+                    Sociedad Argentina de Terapia Intensiva. Personería Jurídica
+                    Nº 2481. <br />
+                    2018 - 2019. Final aprobado
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="education-courses">
+            <h3>Cursos</h3>
+            <div class="courses-grid">
+              <div class="course-card">
                 <p>
                   Curso de introducción a la investigación científica. <br />
                   Ministerio de Salud, Dirección General de Docencia e
@@ -221,129 +231,129 @@
                   Hospital General de Agudos Juan A. Fernández. <br />
                   2014. Duración: 40 horas.
                 </p>
-              </li>
-              <li>
+              </div>
+              <div class="course-card">
                 <p>
                   Introducción a la Programación con R. <br />
                   SADIO. <br />
                   2021. Duración 20 horas.
                 </p>
-              </li>
-              <li>
+              </div>
+              <div class="course-card">
                 <p>
                   Introducción a R en Salud. <br />
                   UBA, Facultad de Ciencias Médicas. <br />
                   2021. Duración: 12 hs.
                 </p>
-              </li>
-              <li>
+              </div>
+              <div class="course-card">
                 <p>
                   Introduction to Writing Functions in R. <br />
                   DataCamp. <br />
                   2022.
                 </p>
-              </li>
-              <li>
+              </div>
+              <div class="course-card">
                 <p>
                   Data Manipulation with dplyr. <br />
                   DataCamp. <br />
                   2021.
                 </p>
-              </li>
-              <li>
+              </div>
+              <div class="course-card">
                 <p>
                   Introduction to R. <br />
                   DataCamp. <br />
                   2021.
                 </p>
-              </li>
-              <li>
+              </div>
+              <div class="course-card">
                 <p>
                   Writing Efficient R Code. <br />
                   DataCamp. <br />
                   2021.
                 </p>
-              </li>
-              <li>
+              </div>
+              <div class="course-card">
                 <p>
                   Introduction to the Tidyverse. <br />
                   DataCamp. <br />
                   2021.
                 </p>
-              </li>
-              <li>
+              </div>
+              <div class="course-card">
                 <p>
                   Fundamentos de las Bases de Datos. <br />
                   UTN. <br />
                   2022. Duración: 37 hs.
                 </p>
-              </li>
-              <li>
+              </div>
+              <div class="course-card">
                 <p>
                   Argentina programa: "Sé Programar". <br />
                   Mumuki. <br />
                   2022. Duración: Febrero - Abril.
                 </p>
-              </li>
-              <li>
+              </div>
+              <div class="course-card">
                 <p>
                   Backend with Node.js Course: REST API with Express.js. <br />
                   Platzi academy. <br />
                   2023.
                 </p>
-              </li>
-              <li>
+              </div>
+              <div class="course-card">
                 <p>
                   Introduction to Backend Development. <br />
                   Platzi academy. <br />
                   2023.
                 </p>
-              </li>
-              <li>
+              </div>
+              <div class="course-card">
                 <p>
                   JavaScript Practical Course. <br />
                   Platzi academy. <br />
                   2022.
                 </p>
-              </li>
-              <li>
+              </div>
+              <div class="course-card">
                 <p>
-                  Basic javascript Course. <br />
+                  Basic JavaScript Course. <br />
                   Platzi academy. <br />
                   2022.
                 </p>
-              </li>
-              <li>
+              </div>
+              <div class="course-card">
                 <p>
                   Frontend Developer Course. <br />
                   Platzi academy. <br />
                   2022.
                 </p>
-              </li>
-              <li>
+              </div>
+              <div class="course-card">
                 <p>
                   Database Fundamentals Course. <br />
                   Platzi academy. <br />
                   2023.
                 </p>
-              </li>
-              <li>
+              </div>
+              <div class="course-card">
                 <p>
                   Logical Thinking Course: Data Management, Structures and
                   Functions. <br />
                   Platzi academy. <br />
                   2023.
                 </p>
-              </li>
-            </ul>
-          </li>
-        </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <section id="resume-pdf"></section>
     </main>
     <footer>
       <div class="footer-content">
-        <p class="top-word">Contácteme</p>
+        <p class="top-word"><a href="contact.html">Contácteme</a></p>
         <hr class="custom-line" />
         <p class="bottom-words">
           &copy; 2024 Pablo Tocalini. Todos los derechos reservados.
