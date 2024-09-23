@@ -263,6 +263,30 @@ nav label {
   margin: 1rem;
 }
 
+#resume-pdf {
+  display: flex;
+  align-items: center;
+}
+
+.cv-button {
+  background-color: #4a7c59;
+  color: #c8d5b9;
+  border: none;
+  margin: 1.5rem auto;
+  padding: 0.8rem 2rem;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+}
+
+.cv-button:hover {
+  background-color: #142005;
+}
+
+.cv-button a {
+  text-decoration: none;
+  color: #c8d5b9;
+}
+
 /* * END RESUME PAGE */
 
 /* * SERVICES PAGE START */
@@ -637,6 +661,11 @@ footer a {
   }
 
   .courses-grid {
+    flex-direction: column;
+  }
+
+  #resume-pdf {
+    display: flex;
     flex-direction: column;
   }
   /** END RESUME PAGE */
