@@ -698,11 +698,6 @@ footer a {
   }
 
   /* * END CERTIFICATIONS AND AWARDS PAGE */
-
-  /** FOOTER */
-  footer p {
-    font-size: 0.875rem; /* Ajusta el tamaño de texto en móviles */
-  }
 }
 
 @media (max-width: 400px) {
