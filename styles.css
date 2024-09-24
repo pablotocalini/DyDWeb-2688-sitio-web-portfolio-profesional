@@ -1,8 +1,8 @@
-/* Asegura que el cuerpo y el contenedor principal ocupen el 100% de la altura de la ventana */
 html {
   font-size: 16px;
 }
 
+/* Asegura que el cuerpo y el contenedor principal ocupen el 100% de la altura de la ventana */
 html,
 body {
   height: 100%;
@@ -79,8 +79,8 @@ nav label {
   object-fit: cover;
   max-width: 100%; /* La imagen nunca será más ancha que su contenedor */
   height: auto; /* Mantiene la proporción de la imagen */
-  border-radius: 0.5rem; /* Si quieres darle bordes redondeados */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #presentation,
@@ -131,8 +131,8 @@ nav label {
 
 .academic-container {
   padding: 1rem;
-  background-color: #f9f9f9; /* Opcional: Cambiar el fondo de los contenedores individuales */
-  border-radius: 8px; /* Redondea los bordes de los contenedores */
+  background-color: #f9f9f9;
+  border-radius: 8px;
 }
 /** END ABOUT ME PAGE */
 
@@ -206,11 +206,11 @@ nav label {
   align-items: start;
   gap: 1rem; /* Espacio entre las dos subtarjetas */
   flex-wrap: wrap; /* Permite que las subtarjetas se apilen en pantallas pequeñas */
-  background-color: #fff; /* Fondo blanco */
-  padding: 1rem; /* Espaciado interno */
-  margin: 1rem auto; /* Centramos la tarjeta */
-  box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04); /* Sombra */
-  border-radius: 0.625rem; /* Bordes redondeados */
+  background-color: #fff;
+  padding: 1rem;
+  margin: 1rem auto; /* Para centrar la tarjeta */
+  box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04);
+  border-radius: 0.625rem;
 }
 
 .education-container {
@@ -228,7 +228,6 @@ nav label {
   padding: 1.25rem;
   border-radius: 0.625rem;
   box-shadow: 0px 0px 0.625rem rgba(0, 0, 0, 0.1);
-
   flex: 1; /* Permite que ambas subtarjetas se expandan proporcionalmente */
   margin: 1rem;
 }
@@ -242,7 +241,6 @@ nav label {
   padding: 1.25rem;
   border-radius: 0.625rem;
   box-shadow: 0px 0px 0.625rem rgba(0, 0, 0, 0.1);
-
   flex: 1; /* Permite que ambas subtarjetas se expandan proporcionalmente */
   margin: 1rem;
 }
@@ -322,7 +320,7 @@ nav label {
 }
 
 .service-card h3 {
-  text-align: center; /* Centra el texto del encabezado */
+  text-align: center;
 }
 /* * END SERVICES PAGE */
 
@@ -336,14 +334,14 @@ nav label {
   gap: 0.5rem;
   align-self: stretch;
   background-color: #fff;
-  flex: 1; /* Permite que los <section> se expandan para ocupar el mismo alto */
+  flex: 1;
   margin: 2rem, 0;
   /* Shadows/Card */
   box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04);
 }
 
 #testimonials h2 {
-  text-align: center; /* Centra el texto del encabezado */
+  text-align: center;
 }
 /* * END TESTIMONIALSPAGE */
 
@@ -358,7 +356,7 @@ nav label {
   gap: 0.5rem;
   align-self: stretch;
   background-color: #fff;
-  flex: 1; /* Permite que los <section> se expandan para ocupar el mismo alto */
+  flex: 1;
   margin: 2rem, 0;
   /* Shadows/Card */
   box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04);
@@ -409,11 +407,11 @@ nav label {
 }
 
 form {
-  margin: 2rem auto; /* Centramos la card y agregamos margen */
-  padding: 2rem; /* Relleno interno */
+  margin: 2rem auto;
+  padding: 2rem;
   background-color: #f4f4f4; /* Color ligeramente más oscuro */
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* Sombra suave */
-  border-radius: 1rem; /* Bordes redondeados */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
 }
 
 #contact-form label {
@@ -462,18 +460,18 @@ form {
   align-items: center; /* Centra el contenido horizontalmente */
   gap: 1rem; /* Espacio entre las dos subtarjetas */
   flex-wrap: wrap; /* Permite que las subtarjetas se apilen en pantallas pequeñas */
-  background-color: #fff; /* Fondo blanco */
-  padding: 2rem; /* Espaciado interno */
-  margin: 1rem auto; /* Centramos la tarjeta */
-  box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04); /* Sombra */
+  background-color: #fff;
+  padding: 2rem;
+  margin: 1rem auto;
+  box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04);
   max-width: 75rem; /* Ancho máximo para la tarjeta */
-  border-radius: 0.5rem; /* Bordes redondeados */
+  border-radius: 0.5rem;
 }
 
 #skills h2 {
   width: 100%; /* Hace que el título ocupe todo el ancho */
-  text-align: center; /* Centra el texto del título */
-  margin-bottom: 1.25rem; /* Equivalente a 20px de margen inferior */
+  text-align: center;
+  margin-bottom: 1.25rem;
 }
 
 .skills-container {
@@ -489,7 +487,7 @@ form {
   padding: 1.25rem;
   border-radius: 0.625rem;
   box-shadow: 0px 0px 0.625rem rgba(0, 0, 0, 0.1);
-  width: 45%; /* Mantén el ancho en porcentaje */
+  width: 45%;
   flex: 1; /* Permite que ambas subtarjetas se expandan proporcionalmente */
   margin: 1rem;
 }
@@ -499,21 +497,21 @@ form {
 /* Contenedor flexible para las subtarjetas */
 #certifications-awards {
   display: flex;
-  flex-direction: column; /* Para que el título esté arriba */
+  flex-direction: column;
   align-items: center; /* Centra el contenido horizontalmente */
   gap: 1rem; /* Espacio entre las dos subtarjetas */
   flex-wrap: wrap; /* Permite que las subtarjetas se apilen en pantallas pequeñas */
-  background-color: #fff; /* Fondo blanco */
-  padding: 2rem; /* Espaciado interno */
+  background-color: #fff;
+  padding: 2rem;
   margin: 1rem auto; /* Centramos la tarjeta */
-  box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04); /* Sombra */
-  border-radius: 0.5rem; /* Bordes redondeados */
+  box-shadow: 0px 0.75rem 0.75rem 0px rgba(0, 0, 0, 0.04);
+  border-radius: 0.5rem;
 }
 
 #certifications-awards h2 {
-  width: 100%; /* Hace que el título ocupe todo el ancho */
-  text-align: center; /* Centra el texto del título */
-  margin-bottom: 1.25rem; /* Equivalente a 20px de margen inferior */
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1.25rem;
 }
 
 .certifications-awards-container {
@@ -526,7 +524,6 @@ form {
   padding: 1.25rem;
   border-radius: 0.625rem;
   box-shadow: 0px 0px 0.625rem rgba(0, 0, 0, 0.1);
-
   flex: 1; /* Permite que ambas subtarjetas se expandan proporcionalmente */
   margin: 1rem;
 }
@@ -579,28 +576,23 @@ footer a {
   }
 
   nav input:checked ~ ul {
-    /*muestra todas el contenido de todas las etiquetas ul */
     display: block;
   }
 
   nav input:checked ~ label {
-    /*muestra todo el contenido de todas las etiquetas label */
     background: #c8d5b9;
   }
 
   nav label:hover {
-    /*cambia el color de ☰ */
     background: #4a7c59;
   }
 
   li {
-    /*elimina el margen  de cada botón */
     margin: 0.5rem;
     text-align: left;
   }
 
   nav label {
-    /* dibuja la etiqueta ☰  con formato botón */
     box-sizing: border-box;
     display: block;
     border: 0.1rem solid black;
@@ -631,7 +623,7 @@ footer a {
     width: 100%; /* Asegura que el contenedor de los <section> ocupe el 100% del ancho en pantallas pequeñas */
   }
   .responsive-image {
-    max-width: 100%; /* O un valor menor para reducirla en pantallas pequeñas */
+    max-width: 100%;
   }
 
   .custom-line {
