@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 html {
   font-size: 16px;
 }
@@ -13,6 +15,7 @@ body {
 /** GENERAL BODY */
 /* Contenedor principal configurado como flexbox */
 body {
+  font-family: 'Inter', Arial, sans-serif;
   display: flex;
   flex-direction: column;
   font-size: 1rem;
